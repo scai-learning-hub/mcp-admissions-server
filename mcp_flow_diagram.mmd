@@ -1,0 +1,35 @@
+graph TB
+    subgraph Clients["AI Clients (independent apps)"]
+        LH["🎓 Learner Host<br/>:8020 — LangGraph<br/>JWT: learner role"]
+        CH["🎧 Counsellor Host<br/>:8030 — LangGraph<br/>JWT: counsellor role"]
+    end
+
+    subgraph Server["MCP Server :8010"]
+        AUTH["JWT Auth"]
+        RBAC["RBAC<br/>role → allowed tools"]
+        VAL["Pydantic Validation"]
+        IDEM["Idempotency Check"]
+        DOMAIN["Domain Services<br/>catalog · fees · leads · callbacks"]
+        RES["Resources<br/>catalog · policies · KB · schemas"]
+        AUDIT["Audit Log"]
+    end
+
+    subgraph DB["PostgreSQL :5433"]
+        TABLES["courses · batches · fees<br/>leads · callbacks · audit"]
+    end
+
+    LH -->|"JSON-RPC / HTTP"| AUTH
+    CH -->|"JSON-RPC / HTTP"| AUTH
+    AUTH --> RBAC
+    RBAC --> VAL
+    VAL --> IDEM
+    IDEM --> DOMAIN
+    DOMAIN --> TABLES
+    RES --> TABLES
+    AUDIT --> TABLES
+
+    style LH fill:#4CAF50,color:#fff
+    style CH fill:#2196F3,color:#fff
+    style AUTH fill:#FF9800,color:#fff
+    style DOMAIN fill:#9C27B0,color:#fff
+    style TABLES fill:#607D8B,color:#fff

@@ -1,0 +1,77 @@
+[project]
+name = "scai-mcp-admissions"
+version = "0.1.0"
+description = "SCAI Admissions & Operations MCP Hub — governed MCP server with learner and counsellor clients"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    # MCP
+    "mcp>=1.20.0",
+    # Web / agent host
+    "fastapi>=0.118.0",
+    "uvicorn[standard]>=0.34.0",
+    "langgraph>=0.6.0",
+    "langchain-core>=0.3.0",
+    # DB
+    "sqlalchemy>=2.0.40",
+    "alembic>=1.15.0",
+    "psycopg[binary]>=3.2.0",
+    # Validation
+    "pydantic[email]>=2.10.0",
+    "pydantic-settings>=2.7.0",
+    # Auth
+    "pyjwt>=2.10.0",
+    "bcrypt>=4.2.0",
+    # HTTP client
+    "httpx>=0.28.0",
+    # Observability
+    "structlog>=24.4.0",
+    "opentelemetry-api>=1.30.0",
+    "opentelemetry-sdk>=1.30.0",
+    # Model adapter
+    "openai>=1.60.0",
+    # UI
+    "streamlit>=1.40.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+    "pytest-cov>=6.0.0",
+    "anyio>=4.7.0",
+    "ruff>=0.9.0",
+    "mypy>=1.14.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["packages", "services"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+markers = [
+    "unit: fast isolated tests",
+    "contract: MCP protocol contract tests",
+    "integration: DB + MCP integration tests",
+    "security: authorization and redaction tests",
+    "e2e: end-to-end scenarios",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true

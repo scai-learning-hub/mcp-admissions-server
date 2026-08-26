@@ -1,0 +1,20 @@
+{
+  "courses": [
+    {
+      "slug": "agentic-ai",
+      "title": "Agentic AI Engineering",
+      "level": "advanced",
+      "duration_weeks": 12,
+      "modes": ["online", "hybrid"],
+      "description": "Design, build, and govern multi-agent AI systems with LangGraph, MCP, and production guardrails."
+    },
+    {
+      "slug": "aiops",
+      "title": "AIOps & MLOps",
+      "level": "intermediate",
+      "duration_weeks": 10,
+      "modes": ["online"],
+      "description": "Operate ML and AI systems in production."
+    }
+  ]
+}

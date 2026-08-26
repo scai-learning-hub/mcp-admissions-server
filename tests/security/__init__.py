@@ -1,0 +1,1 @@
+"""Security tests package — authorization + redaction (plan §14)."""

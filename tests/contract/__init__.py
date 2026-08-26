@@ -1,0 +1,1 @@
+"""Contract tests package — MCP protocol contract tests (plan §14)."""

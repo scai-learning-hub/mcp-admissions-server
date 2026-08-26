@@ -1,0 +1,1 @@
+"""Scripts: seed, token, demo checks."""

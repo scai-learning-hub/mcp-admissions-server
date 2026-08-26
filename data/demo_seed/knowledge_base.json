@@ -1,0 +1,60 @@
+{
+  "articles": [
+    {
+      "id": "kb-001",
+      "title": "Admission Process Overview",
+      "category": "admissions",
+      "tags": ["process", "how-to", "enrollment"],
+      "body": "The admission process at the academy is designed to be simple and transparent.\n\n1. **Browse courses** — Explore our catalog to find the right course for your career goals.\n2. **Get a fee quote** — Request a fee quote for any course + batch combination. Quotes are valid for 7 days.\n3. **Request a callback** — A counsellor will call you to discuss course details, prerequisites, and payment options.\n4. **Enroll** — After the callback, you can enroll by confirming your lead. A seat will be reserved in the upcoming batch.\n\nNo payment is required until enrollment confirmation."
+    },
+    {
+      "id": "kb-002",
+      "title": "Course Prerequisites",
+      "category": "courses",
+      "tags": ["prerequisites", "eligibility"],
+      "body": "Each course has different prerequisites:\n\n- **Agentic AI Engineering** (12 weeks, advanced): Strong Python programming, basic ML concepts, familiarity with APIs.\n- **MLOps Engineering** (8 weeks, advanced): Production Python, CI/CD basics, Docker fundamentals.\n- **AIOps & MLOps** (10 weeks, advanced): Python, basic DevOps, understanding of ML lifecycle.\n- **Generative AI Foundations** (6 weeks, intermediate): Basic Python, curiosity about AI/ML.\n\nNot sure which course fits? Request a callback and a counsellor will help you decide."
+    },
+    {
+      "id": "kb-003",
+      "title": "Fee Structure & Payment Options",
+      "category": "fees",
+      "tags": ["fees", "payment", "scholarship"],
+      "body": "Fee quotes are generated per course + batch combination and include:\n- **Tuition fee** — the base course fee.\n- **Early-bird discount** — available for registrations made 30+ days before batch start.\n- **Total** — the final payable amount.\n\nPayment options:\n- Full upfront payment (no extra charge).\n- EMI plans available through partner financial institutions (3, 6, or 12 months).\n- Need-based scholarships for deserving candidates — ask your counsellor during the callback.\n\nAll quotes are valid for 7 days from generation."
+    },
+    {
+      "id": "kb-004",
+      "title": "Batch Schedule & Modes",
+      "category": "batches",
+      "tags": ["schedule", "online", "in-person", "hybrid"],
+      "body": "Batches are offered in three modes:\n\n- **Online** — Live instructor-led sessions via Zoom/Meet. Recordings available for 30 days.\n- **In-person** — On-campus at our Bangalore center. Limited seats (typically 20-25).\n- **Hybrid** — Attend online or in-person. Best of both worlds.\n\nBatches typically run for 6-12 weeks depending on the course. New batches start every 4-6 weeks. Use the 'batches_find_upcoming' tool to see the next available batch for any course."
+    },
+    {
+      "id": "kb-005",
+      "title": "Callback & Support",
+      "category": "support",
+      "tags": ["callback", "contact", "support"],
+      "body": "Need to talk to someone? You can request a callback from our admissions team.\n\n- **How to request**: Simply ask the assistant 'I'd like a callback' or use the callback request flow.\n- **What happens**: A lead is created with your contact info. A counsellor is assigned and will call you within 24-48 hours.\n- **Working hours**: Mon-Sat, 10 AM - 7 PM IST.\n- **Support email**: admissions@academy.example\n\nYou'll receive a callback reference number once the callback is scheduled."
+    },
+    {
+      "id": "kb-006",
+      "title": "Refund & Cancellation Policy",
+      "category": "policies",
+      "tags": ["refund", "cancellation", "policy"],
+      "body": "Our refund policy is student-friendly:\n\n- **Before batch start**: Full refund minus a 5% processing fee.\n- **Within first 3 sessions**: 70% refund.\n- **After 3 sessions**: No refund, but you can defer to a future batch at no extra cost.\n\nTo request a refund, contact your assigned counsellor or email admissions@academy.example with your enrollment reference number."
+    },
+    {
+      "id": "kb-007",
+      "title": "Career Outcomes & Placement Support",
+      "category": "career",
+      "tags": ["placement", "career", "jobs"],
+      "body": "The academy provides comprehensive placement support:\n\n- **Resume building** — 1:1 sessions with career coaches.\n- **Mock interviews** — Technical + behavioral interview practice.\n- **Job portal access** — Exclusive job board with 200+ hiring partners.\n- **Placement guarantee** — For Agentic AI Engineering and MLOps Engineering courses (terms apply).\n- **Alumni network** — Lifetime access to our alumni Slack community.\n\nAverage salary hike for our graduates: 45% (based on 2024-2025 data)."
+    },
+    {
+      "id": "kb-008",
+      "title": "Technical Requirements",
+      "category": "logistics",
+      "tags": ["hardware", "software", "setup"],
+      "body": "To attend our courses you'll need:\n\n**Hardware:**\n- A laptop with 8GB+ RAM (16GB recommended for advanced courses).\n- Stable internet connection (5+ Mbps for live sessions).\n- Webcam + microphone for interactive sessions.\n\n**Software:**\n- Python 3.10+ (we'll help you set this up).\n- A code editor (VS Code recommended).\n- Docker (for MLOps/AIOps courses).\n\nDon't worry if you're not set up yet — the first session includes a guided environment setup."
+    }
+  ]
+}

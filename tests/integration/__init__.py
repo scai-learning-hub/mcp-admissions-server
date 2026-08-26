@@ -1,0 +1,1 @@
+"""Integration tests package — MCP tool → domain → PostgreSQL (plan §14)."""

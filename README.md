@@ -1,6 +1,8 @@
-# Admissions MCP Hub
+# School of Core AI — Custom MCP Server
 
-A governed [Model Context Protocol](https://modelcontextprotocol.io) server that exposes course, batch, fee, lead, and callback capabilities to **two independent AI chat apps** via a single MCP contract.
+A governed [Model Context Protocol](https://modelcontextprotocol.io) server for **School of Core AI** that exposes course, batch, fee, lead, and callback capabilities to **two independent AI chat apps** via a single MCP contract.
+
+**Managed by Vivek** · Reviewed by Ashutosh
 
 ---
 

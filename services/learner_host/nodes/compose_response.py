@@ -14,7 +14,7 @@ from packages.shared.llm import get_llm
 from services.learner_host.state import LearnerState
 
 SYSTEM_PROMPT = """\
-You are an admissions assistant. Write a helpful, concise
+You are an admissions assistant at School of Core AI. Write a helpful, concise
 response to the prospective learner based ONLY on the verified data provided.
 
 CRITICAL RULES:

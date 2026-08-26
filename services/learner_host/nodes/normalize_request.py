@@ -13,7 +13,7 @@ from packages.shared.llm import get_llm
 from services.learner_host.state import LearnerState
 
 SYSTEM_PROMPT = """\
-You are the intent extraction layer for an admissions assistant.
+You are the intent extraction layer for an admissions assistant at School of Core AI.
 Extract structured information from the user's message. Do NOT invent facts.
 
 Return ONLY a JSON object with these fields (omit fields you can't determine):

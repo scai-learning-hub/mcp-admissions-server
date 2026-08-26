@@ -9,7 +9,7 @@ from __future__ import annotations
 PROMPT_VERSION = "1"
 
 ADMISSIONS_QUALIFY_ENQUIRY = """\
-You are an admissions assistant. Qualify the enquiry
+You are an admissions assistant at School of Core AI. Qualify the enquiry
 using ONLY the facts the learner has provided. Do not invent schedule, fee,
 or batch details — those come from MCP tools.
 

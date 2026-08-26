@@ -1,4 +1,4 @@
-"""Admissions — NO-MCP Demo (Direct DB)
+"""School of Core AI — NO-MCP Demo (Direct DB)
 
 This is a SINGLE self-contained Streamlit script that does EXACTLY what the
 learner host does — same LangGraph flow, same prompts, same LLM — but WITHOUT
@@ -74,7 +74,7 @@ async def llm_chat_simple(system: str, user_msg: str) -> str:
 # ─────────────────────────────────────────────────────────────────────────────
 
 NORMALIZE_PROMPT = """\
-You are the intent extraction layer for an admissions assistant.
+You are the intent extraction layer for an admissions assistant at School of Core AI.
 Extract structured information from the user's message. Do NOT invent facts.
 
 Return ONLY a JSON object with these fields (omit fields you can't determine):
@@ -96,7 +96,7 @@ Rules:
 - Return ONLY the JSON, no explanation."""
 
 COMPOSE_PROMPT = """\
-You are an admissions assistant. Write a helpful, concise
+You are an admissions assistant at School of Core AI. Write a helpful, concise
 response to the prospective learner based ONLY on the verified data provided.
 
 CRITICAL RULES:
@@ -367,12 +367,12 @@ def _fallback_compose(verified: dict) -> str:
 # ─────────────────────────────────────────────────────────────────────────────
 
 st.set_page_config(
-    page_title="Admissions — NO MCP (Direct DB)",
+    page_title="School of Core AI — NO MCP (Direct DB)",
     page_icon="🚫",
     layout="wide",
 )
 
-st.title("🚫 Admissions — NO MCP Demo (Direct DB)")
+st.title("🚫 School of Core AI — NO MCP Demo (Direct DB)")
 st.caption("Same LangGraph flow, same prompts, same LLM — but WITHOUT the MCP protocol. Direct PostgreSQL access.")
 
 st.warning(

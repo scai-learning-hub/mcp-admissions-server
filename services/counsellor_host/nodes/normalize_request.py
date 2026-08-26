@@ -12,7 +12,7 @@ from packages.shared.llm import get_llm
 from services.counsellor_host.state import CounsellorState
 
 SYSTEM_PROMPT = """\
-You are the intent extraction layer for a counsellor console.
+You are the intent extraction layer for a counsellor console at School of Core AI.
 Extract structured information from the counsellor's message. Do NOT invent facts.
 
 Return ONLY a JSON object with these fields (omit fields you can't determine):

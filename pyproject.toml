@@ -1,7 +1,7 @@
 [project]
 name = "scai-mcp-admissions"
 version = "0.1.0"
-description = "SCAI Admissions & Operations MCP Hub — governed MCP server with learner and counsellor clients"
+description = "School of Core AI — Custom MCP Server with governed tools, learner and counsellor clients"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
 dependencies = [

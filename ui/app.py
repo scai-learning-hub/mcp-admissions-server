@@ -9,7 +9,7 @@ Run:
 import requests
 import streamlit as st
 
-st.set_page_config(page_title="Admissions MCP Hub", page_icon="🎓", layout="wide")
+st.set_page_config(page_title="School of Core AI — MCP Server", page_icon="🎓", layout="wide")
 
 LEARNER_URL = "http://localhost:8020"
 COUNSELLOR_URL = "http://localhost:8030"
@@ -51,7 +51,7 @@ def check_health(url: str) -> bool:
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.title("Admissions MCP Hub")
+    st.title("School of Core AI")
     st.caption("MCP-powered chat hub")
     st.metric("MCP Server", "✅ Online" if check_health(MCP_URL) else "❌ Offline")
     st.metric("Learner Host", "✅ Online" if check_health(LEARNER_URL) else "❌ Offline")
